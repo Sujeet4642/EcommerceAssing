@@ -182,14 +182,12 @@ public void user_clicks_on_dropdown_and_select_size_to_l_and_clicks_on_add_to_ca
 @Then("User is displayed Tshirt with twice the quantity and selected size")
 public void user_is_displayed_tshirt_with_twice_the_quantity_and_selected_size() {
    userJourneyObj.validateSizeOfTshirt();
-   userJourneyObj.validateQuantityOfTshirt();
-  
+   userJourneyObj.validateQuantityOfTshirt(); 
 }
 
-@Then("User  User sees the Pop Up that Product Successfully Added to Cart")
+@Then("User sees the Pop Up that Product Successfully Added to Cart")
 public void user_user_sees_the_pop_up_that_product_successfully_added_to_cart() {
-   userJourneyObj.validateSizeOfTshirt();
-  
+	userJourneyObj.AddedToCartIconIsDisplayed();
 }
 
 @Then("Check Total Price is twice the amount fetched earlier")
@@ -202,7 +200,7 @@ public void check_total_price_is_twice_the_amount_fetched_earlier() {
 @When("User clicks on Proceed to Checkout")
 public void user_clicks_on_proceed_to_checkout() {
 	 userJourneyObj.clickOnProceedToCheckout();
-	//userJourneyObj.clickOnProceedToCheckOutAgain();
+	
 }
 
 @When("User Click on Proceed to Check out again and reach till payment and click on Terms and condition check box")

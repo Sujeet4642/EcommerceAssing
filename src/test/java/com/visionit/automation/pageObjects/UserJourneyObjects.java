@@ -16,6 +16,7 @@ public class UserJourneyObjects {
 	//private By quantity = By.xpath("//a[@class='btn btn-default button-plus product_quantity_up']");
 	private By Setquantity = By.id("quantity_wanted");
 	private By addToCart = By.xpath("//p[@id='add_to_cart']");
+	private By AddedToCartIcon = By.xpath("//i[@class='icon-ok']");
 	private By validateSize = By.xpath("//*[text()=\"Orange, L\" and @id='layer_cart_product_attributes']");
 	private By validateQuantity = By.xpath("//*[@id='layer_cart_product_quantity']");
 	private By validateTshirtsPrice = By.xpath("//span[@class='ajax_block_cart_total' and text()=\"$35.02\"]");
@@ -57,6 +58,13 @@ public class UserJourneyObjects {
     public void clickOnAddToCart() {
 		driver.findElement(addToCart).click();
 	}
+    
+    public void AddedToCartIconIsDisplayed() {
+    	WebDriverWait wait = new WebDriverWait(driver, 20);
+    	wait.until(ExpectedConditions.elementToBeClickable(proceedToCheckout));
+    	boolean b = driver.findElement(AddedToCartIcon).isDisplayed();
+        Assert.assertEquals("Added to cart", true, b);
+    }
     
     public void validateSizeOfTshirt() {
     	String b = driver.findElement(validateSize).getText();

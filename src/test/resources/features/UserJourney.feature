@@ -17,7 +17,7 @@ Scenario: User is able to add Tshirt in AddToCart
   And  User clicks on the product as Faded short sleeves Tshirt 
   And User clicks on quantity and increase the quantity to two
   And User clicks on dropdown and select size to L and clicks on Add to cart button
-  Then User  User sees the Pop Up that Product Successfully Added to Cart
+  Then User sees the Pop Up that Product Successfully Added to Cart
   And  Check Total Price is twice the amount fetched earlier
   
   
