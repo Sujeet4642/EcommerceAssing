@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features="classpath:features",
 		glue="com.visionit.automation.stepdefs",
-		tags="@login",
+		tags="@journey",
 		plugin = {"pretty",
 				"html:target/html/htmlreport.html",
 				"json:target/json/file.json",		

@@ -18,7 +18,6 @@ public class SignUpPageObjects {
 	private By signIn = By.xpath("//a[@class='login']");
 	private By emailBox = By.id("email_create");
 	private By createAnAcc = By.id("SubmitCreate");
-	//private By gender = By.id("id_gender");
 	private By firstName = By.id("customer_firstname");
 	private By lastName = By.id("customer_lastname");
 	private By password = By.id("passwd");
@@ -109,4 +108,7 @@ public class SignUpPageObjects {
 		Assert.assertEquals("title", true, b);
 		logger.info("Match Title of Created Account page as : " + expectedTitle );
 	}
+	
+	
 }
+

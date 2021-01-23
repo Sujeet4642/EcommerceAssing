@@ -13,7 +13,8 @@ public class ColourChangeObjects {
 
 	
 	private WebDriver driver;
-	//a[@title='T-shirts']
+	
+	//ul[@class='submenu-container clearfix first-in-line-xs']//a[@title='T-shirts']
 	private By TshirtLink = By.xpath("//*[@id=\"block_top_menu\"]/ul/li[3]/a");
     private By FadedTshirt=By.xpath("//a[@title='Faded Short Sleeve T-shirts' and @ class='product-name']");
     private By BlueColour=By.id("color_14");

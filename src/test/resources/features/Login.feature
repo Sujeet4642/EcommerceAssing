@@ -6,7 +6,7 @@ Feature: E-Commerce Shopping features
   
   Scenario: User is able to login in the application
     When  User clicks on sign up link of the application
-    And   User enters email address as "sujeet46s1990@gmail.com" and password as "suj123" and clicks on Signin button
+    And   User enters email address as "sujeet42s1990@gmail.com" and password as "suj123" and clicks on Signin button
     Then  User is login in the account
 
  
