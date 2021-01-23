@@ -10,6 +10,6 @@ Feature: E-Commerce Shopping features
     Then User is able to see result
     
   Scenario: User is able to sent Tshirt to the friend
-  And User clicks on Send to a friend link of the application and clicks on send button
+  And User clicks on Send to a friend link of the application and User enters name as "sujeet" and email address as "sujeet22s1990@gmail.com" and clicks on send button
   Then User is displayed with the message as "Your e-mail has been sent successfully"
    
